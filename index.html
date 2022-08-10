@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表</title>
+    <!-- <script>
+        alert(navigator.userAgent);
+    </script> -->
+    <style>
+    fieldset{
+        border: none;
+        border-radius: 2px;
+        margin-bottom: 12px;
+        overflow: hidden;
+        padding: 0.625em;
+    }
+    label{
+        cursor: pointer;
+        display: inline-block;
+        padding: 3px 6px;
+        text-align: right;
+        width: 150px;
+        vertical-align: top;
+    }
+    input{
+        font-size: inherit;
+    }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center ;">表</h1>
+    <div class="content">
+    <form>
+        <fieldset>
+            
+       <p> <label for="name">姓名</label><input type="text" id="name"><br></p>
+       <p>
+        <label for="idcard">身份证号</label>
+        <input type="text" id="idcard">
+    </p>
+
+        <p>
+            <label for="">性别</label><br>
+            <label for="male"><input type="radio" name="sex" id="male" >男</label>
+            <label for="female"><input type="radio" name="sex" id="female" >女</label>
+        </p>
+        <p><label for="date">出生日期</label>
+            <input type="date" name="date">            
+        </p>
+        <p><label for="age">年龄</label><input type="number" name="age"></p>
+        <p><label for="phonenumber">手机号</label><input onkeyup="value=value.replace(/[^0-9]/g,'')" onpaste="value=value.replace(/[^0-9]/g,'')" oncontextmenu = "value=value.replace(/[^0-9]^-/g,'')" name="phonenumber"></p>
+        <p>
+            <label for="hobby">爱好</label><br>
+            <input type="checkbox" name="sing" id="sing">
+            <label for="sing">唱歌</label><br>
+            <input type="checkbox" name="dance" id="dance">
+            <label for="dance">跳舞</label><br>
+            <input type="checkbox" name="basketball" id="basketball">
+            <label for="basketball">篮球</label>
+        </p>
+        <p>
+            <label for="time">场次</label><input type="date" name="time">
+            <select name="time1" id="time1">
+                <option value="up">上</option>
+                <option value="mid">中</option>
+                <option value="down">下</option>
+            </select>
+        </p>
+        <p><label for="area">地区</label><select><option value="beijing">北京</option>
+            <option value="tinjin"">天津</option>
+            <option value="hebei"">河北</option>
+            <option value="shanxi"">山西</option>
+            <option value="neimenggu"">内蒙古</option>
+            <option value="liaoning"">辽宁</option>
+            <option value="jilin"">吉林</option>
+            <option value="heilongjiang"">黑龙江</option>
+            <option value="shanghai"">上海</option>
+            <option value="jiangsu"">江苏</option>
+            <option value="zhejiang"">浙江</option>
+            <option value="anhui"">安徽</option>
+            <option value="fujian"">福建</option>
+            <option value="jiangxi"">江西</option>
+            <option value="shandong"">山东</option>
+            <option value="taiwan"">台湾</option>
+            <option value="henan"">河南</option>
+            <option value="hubei">湖北</option>
+            <option value="hunan">湖南</option>
+            <option value="guandong">广东</option>
+            <option value="guangxi">广西</option>
+            <option value="hainan">海南</option>
+            <option value="hongkong">香港</option>
+            <option value="macao">澳门</option>
+            <option value="chongqing">重庆</option>
+            <option value="sichuan">四川</option>
+            <option value="guizhou">贵州</option>
+            <option value="yunnan">云南</option>
+            <option value="tibet">西藏</option>
+            <option value="shaanxi">陕西</option>
+            <option value="gansu">甘肃</option>
+            <option value="qinghai">青海</option>
+            <option value="ningxia">宁夏</option>
+            <option value="xinjiang">新疆</option>
+            <option value="haiwai">海外</option>
+        </select>
+        <input type="text" name="area">
+    </p>
+    <p>
+    <label for="wxid">微信号</label><input type="text" name="wxid">
+</p>
+<p>
+    <label for="emgphone">紧急联系人手机号</label><input onkeyup="value=value.replace(/[^0-9]/g,'')" onpaste="value=value.replace(/[^0-9]/g,'')" oncontextmenu = "value=value.replace(/[^0-9]^-/g,'')" name="phonenumber">
+</p>
+<p>
+    <input type="submit" name="提交">
+</p>
+</fieldset>
+</form>            
+    </div>
+    <a href="mailto:">邮件</a>
+</body>
+</html>
